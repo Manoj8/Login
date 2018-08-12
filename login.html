@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css" media="screen,projection">
+        <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	  
+        <title>Login</title>
+	  
+        <style>
+	  
+		    body
+		    {
+			    background-image:url(https://upload.wikimedia.org/wikipedia/commons/6/66/Lockheed_Vega_5-C_%285827550370%29.jpg);
+			    background-repeat: no-repeat;
+			    background-size: 100% 125%;
+                min-width: 310px;
+		    }
+            
+            
+            .row
+            {
+                position:relative;
+                top:50px;left:9%;
+                width:750px;
+            }
+
+            #head
+            {
+                background-color: silver;
+                width:110%;
+                margin-left:-25px;
+                margin-top: -23px;
+                color:#383838;
+            }
+            .header
+            {
+                background-color:#a5a5a5;
+                position:relative;
+                top:-42px;
+            
+                width:100%;
+                height:80px;
+                font-family:serif;	
+            }
+
+            .logg
+            {
+                background-image:url(https://upload.wikimedia.org/wikipedia/commons/6/66/Lockheed_Vega_5-C_%285827550370%29.jpg);
+                background-repeat: no-repeat;
+                background-size:100% 110%;
+                width: 40%;
+                height:450px;
+                border: 2px solid #3b3c3d;
+                border-radius:10px;
+                margin:50px 0 0 19%;	
+                position: relative;
+                left:10%;
+                top:0px;
+				padding-left: 100px;
+				padding-top: 50px;
+            }
+            
+            .modal
+            {
+                background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                background-repeat : no-repeat;
+                background-position:  center;
+                background-size: 105% 105%;
+                width:50%;
+                overflow-x: hidden;
+                
+            }
+            
+            .btn 
+            {
+                background-color: #919191;
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-align: center;
+                font-size: 16px;
+                margin: 4px 2px;
+                opacity: 1;
+                transition: 0.3s;
+                
+            }
+
+            .btn:hover {opacity: 1}
+
+            .button span 
+            {
+                cursor: pointer;
+                display: inline-block;
+                position: relative;
+                transition: 0.5s;
+            }
+
+            .button span:after 
+            {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: -20px;
+                transition: 0.5s;
+            }
+
+            .button:hover span 
+            {
+                padding-right: 25px;
+            }
+
+            .button:hover span:after 
+            {
+                opacity: 1;
+                right: 0;
+            } 
+            
+            
+            #button11
+            {
+				margin-left: -15px;
+            }
+                
+            #button1100
+            {	
+                position: relative;
+                margin-left: 6%;			
+            }
+
+
+			@media screen and (max-width: 500px)
+			{
+                
+                body
+                {
+                    background-size:145% 150%;
+                }
+				
+                .header
+                {
+				    width: 500px;
+				}
+				
+				.logg
+                {
+				    padding-right: 60px;
+				    padding-left: 60px;
+				    padding-top: 10px;
+				    width:400px;
+                    height:400px;
+                    margin-left:5%;
+                    margin-top:30%;
+				}
+				
+				#button11
+                {
+				    margin-left: -15px;
+                    
+				}
+                
+                #button1100
+                {
+                    margin-left: -10%;
+				}
+				
+                #id
+                {
+                    position:relative;
+                    top:-400px;
+                }
+				.modal
+				{
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 110% 115%;
+                    padding: 0 0% 0px 35%;
+                    width:95%;
+			        overflow-x: visible; 
+				}
+				#head
+                {   
+				    width: 270%;
+                    margin-left:-150px;
+				}
+				
+				h4
+                {	
+				    margin-right: 100px;
+				}
+				
+				#cc11
+                {
+				    margin-left: 20px;
+				}
+            
+				#name
+                {
+                    position: relative;
+                    top: 50px;
+                }
+				
+				#inc
+                {
+                    width:200px;
+                
+                }
+                
+                #pass
+                {
+                    position: relative;
+                    left:300px;
+                }
+				
+                #dob
+                {
+                    margin-left:-8px;
+                    margin-top: -100px
+                }
+			}
+			
+			@media screen and (min-width:501px) and (max-width: 800px)
+			{
+                
+                body
+                {
+                    background-size:100% 150%;
+                }
+			
+				.header
+                {
+				    width: 100%;
+				}
+
+				.logg
+                {
+                    margin-top: 200px;
+                    padding-left: 100px;
+                    padding-top: 40px;
+                    width: 550px;
+                    margin-left: 5%;
+				}
+				
+                #name
+                {
+                    position: relative;
+                    top: 50px;
+                }
+				#button11
+                {
+    				position: relative;			
+				    margin-bottom: 2%;
+				}
+				
+				#button1100
+                {
+                    position: relative;
+                    margin-left: 4%;
+				}
+				
+				.modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    padding: 0 0% 0px 10%;
+                    width:80%;
+			        overflow-x: visible; 
+				}
+			
+                #inc
+                {
+                    width:150px;
+                }
+				
+				#head
+                {
+				    width: 170%;
+                    margin-left:-100px;
+				}
+				
+				h4{
+					
+					margin-right: 100px;
+				}
+				
+				#cc11
+                {
+				    margin-left: 20px;
+				}
+                
+                #pass
+                {
+                    position: relative;
+                    left:130px;
+                }
+                #button1
+                {
+                    margin-left: 20px;
+                }
+			}
+            
+            @media screen and (min-width:1000px) and (max-width: 1300px)
+			{
+                body
+                {
+                    background-size: 100% 140%;
+                }
+                .modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    padding: 0 0% 0px 5%;
+                    width:70%;
+			        overflow-x: hidden; 
+				}
+                
+                .logg
+                {
+                    width:650px;
+                    height:480px;
+                    margin-top: 150px;
+                }
+                #head
+                {
+                    width:120%;
+                    margin-left: -90px;
+                }
+                
+                #name
+                {
+                    position: relative;
+                    top: 40px;
+                    left:30px;
+                }
+                
+                #button11
+                {
+				    margin-left: 20px;
+				}
+                
+                #button1100
+                {
+                    margin-left: 8%;
+				}
+                
+            }
+			
+            
+            @media screen and (min-width:1301px) and (max-width: 1500px)
+			{
+                body
+                {
+                    background-size: 100% 120%;
+                }
+                .modal
+				{
+                    
+                    background-image: url(http://www.artisticrealism.com/drawings/on-the-wing-pencil-drawing.jpg);
+                    background-repeat : no-repeat;
+                    background-position:  center;
+                    background-size: 105% 115%;
+                    padding: 0 0% 0px 5%;
+                    width:70%;
+			        overflow-x: hidden; 
+				}
+                
+                .logg
+                {
+                    width:650px;
+                    height:480px;
+                    margin-top: 150px;
+                }
+                #head
+                {
+                    width:120%;
+                    margin-left: -95px;
+                }
+                
+                #name
+                {
+                    position: relative;
+                    top: 40px;
+                    left:30px;
+                }
+                
+                #button11
+                {
+				    margin-left: 20px;
+				}
+                
+                #button1100
+                {
+                    margin-left: 8%;
+				}
+                
+            }
+			
+          
+        </style>
+    
+    </head>
+
+    <body>
+		
+		<div class="header">
+           
+            <h1 style="text-align:center;color:#1d2023">LOGIN</h1>
+		
+        </div>
+
+    	<div class="logg">
+				<form>
+                    <div id="name">
+						<div class="input-field col s6">
+				            <i class="material-icons prefix" style="font-size:45px;color:black;">account_circle</i>
+				            <input id="icon_prefix" type="text" style="color:black; width: 50%;" class="validate" name="email">
+				            <label for="icon_prefix"><strong  style="color:black;font-size:22px;position: relative;top:-5px;">User Name</strong></label>
+				        </div>
+				   
+				        <div class="input-field col s6">
+							 <i class="material-icons prefix" style="font-size:45px;color:black;">lock_outline</i>
+							 <input id="icon_password" type="Password" style="color:black; width: 50%;" class="validate" name="password">
+                            <label for="icon_password"><strong style="color:black;font-size:22px;position: relative;top:-5px;">Password</strong></label>
+				        </div>
+                
+                    </div>
+			
+                   <div id="log">
+                    
+                       <button value="login" class="button" id="button11" style="width:100px;height:40px;vertical-align:middle;position:relative;left:28%;top:85px;border-radius:5px"><span style="font-size: 18px"><strong><i>Login</i></strong></span></button>
+                      <button data-target="modal1" class="button modal-trigger" id="button1100" value="signup" style="width:100px;height:40px;border-radius: 5px;position:relative;top:140px;left:1%;font-size:16px"><strong><span><i>Sign Up</i></span></strong></button>
+                       
+                    </div>
+                         
+			 </form>
+			 </div>     
+            <div id="popup">                                      
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                           <nav id="head">
+                               <h4 style="margin-left:350px;padding-top: 10px;font-family:sans-serif">Sign Up</h4>
+                               <a href="#!" class="modal-close waves-effect waves-green btn-flat" id="cc11" style="position:relative;left:90%;top:-65px;font-size: 20px">X</a>
+                           </nav>
+                            <form method='post' action='/signup' class="modal-content" action="/action_page.php" id="cc1100">
+                   <div id="elements" style="color:black;position:relative;top:-60px">
+                    <div class="row" style="position: relative;left:-220px;top:10px;width:50%">
+                        <form class="col s12">
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">person</i>
+                                    <input id="first_name" name="f_name" type="text" class="validate" required>
+                                    <label for="first_name"><strong style="color:black;font-size: 18px">First Name</strong></label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">person</i>
+                                    <input id="last_name" name="l_name" type="text" class="validate">
+                                    <label for="last_name"><strong style="color:black;font-size: 18px">Last Name</strong></label>
+                                </div>
+                            </div>
+                            <div id="gender" style="position: relative;left:50px;top:50px;">
+                                <p>
+                                    <label>
+                                        <input class="with-gap" name="group1" value="male" type="radio"/>
+                                        <span><strong style="color:black;font-size: 18px">Male</strong></span>
+                                    </label>
+
+                                    <label>
+                                        <input class="with-gap" name="group1" value="female" type="radio"/>
+                                        <span><strong style="color:black;font-size: 18px">Female</strong></span>
+                                    </label>
+                                </p>
+                            </div>
+                             <div class="input-field col s6" style="margin-left:30px;width:80%;margin-top:97px;">
+                                    <i class="material-icons prefix">create</i>
+                                    <input id="inc" name="country" type="text" class="validate" required>    
+                                    <label for="country"><strong style="color:black;font-size: 18px">Country</strong></label>
+                            </div>
+                            <div class="date" style="width:70%;margin-left:450px;margin-top: 90px;">
+                            	<i class="material-icons prefix" id="dob">event_note</i>
+                                <strong style="font-size:20px;position:relative;top:-5px;">DOB</strong>
+                                <input id="inc" name="dob" type="date" value="date">
+                            </div>
+                            <div class="row" style="position: relative;top:0px;">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">location_on</i>
+                                    <input id="address" type="text" name="address" class="validate" required>
+                                    <label for="address"><strong style="color:black;font-size: 18px">Address</strong></label>
+                                </div>
+                            </div>
+                            <div class="row" style="position: relative;top:0px;">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">email</i>
+                                    <input id="email" type="email" name="email" class="validate" required>
+                                    <label for="email"><strong style="color:black;font-size: 18px">Email</strong></label>
+                                </div>
+                            </div>
+                            <div class="row" style="position: relative;top:-25px;">
+                                <div class="input-field col s12">
+                                    <i class="material-icons prefix">lock_outline</i>
+                                    <input id="password" type="password" name="password" class="validate" required pattern="[a-zA-Z]{8,12}" title="The password Should contain only letters ranging between 8 to 12 Characters">
+                                    <label for="password"><strong style="color:black;font-size: 18px">Password</strong></label>
+                                </div>
+                            </div>
+                            
+                            <div class="row" style="position: relative;top:-50px;width:150%;">                                
+                                <div class="input-field col s6">
+                                    <i class="material-icons prefix">phone</i>
+                                    <input id="inc" type="tel" name="phone" class="validate">
+                                    <label for="icon_telephone"><strong style="color:black;font-size: 18px">Telephone</strong></label>
+                                </div>
+                            </div>
+                            <div>
+                            <div class="input-field col s6" id="pass" style="margin-left:125%;width:80%;margin-top: -135px;">
+                            		<i class="material-icons prefix">flight</i>
+                                    <input id="inc" type="text" name="idc" class="validate" required pattern="[a-zA-Z][0-9]{6}">
+                                    
+                                    <label for="text"><strong style="color:black;font-size: 18px">PassportID</strong></label>
+                            </div>
+                            </div>
+                           
+                        </form>
+                    </div>
+                    <div id="bb" style="position: relative;left:55%;top:0px">
+                        <button class="button" id="button1" style="vertical-align:middle;position:relative;left:-15%;top:-45px;width:150px; height:50px;color:silver;border-radius: 5px;" value="signup"><span style="font-size: 22px;color:black;"><strong><i>SignUp</i></strong></span></button>
+                    </div>
+                    </div>
+                </form>
+                        </div>
+                    </div>
+                </div>
+            
+
+            
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js "></script>
+        
+        <script>
+                
+            $(document).ready(function() 
+            {
+                $('input#input_text, textarea#textarea2').characterCounter();
+            });       
+	   
+        </script>
+        
+        <script>
+        
+            $(document).ready(function()
+            {
+                $('.modal').modal();
+            });
+                    
+        </script>
+            
+    </body>
+</html>
